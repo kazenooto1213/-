@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: rgb(226, 252, 226);
+  font-family: 'Noto Sans', 'Noto Sans JP',sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 共通の幅設定 */
+.wrapper {
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+#header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+}
+
+#header .site-title {
+  padding: 20px 16px;
+  line-height: 1px;
+}
+
+#navi {
+  background-color: #333;
+}
+
+#navi ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#navi li {
+  font-size: 0.875rem;
+  padding: 10px 60px 10px 0;
+}
+
+#navi a {
+  color: #fff;
+}
+
+/* 旅行の思い出ピックアップ */
+#pickup {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 50px;
+}
+
+#pickup article {
+  width: 32%;
+}
+
+#pickup .pickup-title {
+  font-size: 1rem;
+  padding: 15px 0 10px 0;
+}
+
+/* リードモア */
+.readmore {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.readmore a {
+  font-size: 0.875rem;
+
+  position: relative;
+}
+
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+/* メイン画面とサイドバー */
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+#container main {
+  width: 65%;
+}
+
+main ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+main li {
+  font-size: 0.875rem;
+  padding: 10px 30px 10px 0;
+}
+
+#container .text {
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px 30px 30px 30px;
+}
+
+/* サイドバー */
+#sidebar {
+  width: 32%;
+}
+
+.me {
+  text-align: center;
+}
+
+.me img {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+#sidebar .side-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile {
+  font-size: 0.875rem;
+  text-align: left;
+  padding: 10px 40px 30px 40px;
+}
+
+.ranking {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.ranking .ranking-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.archive .side-title {
+  text-align: center;
+}
+
+.archive li {
+  font-size: 0.875rem;
+  text-align: left;
+  padding: 20px;
+  border-top: solid 1px #333;
+}
+
+.archive li:last-child {
+  border-bottom: solid 1px #333;
+}
+
+.archive a:hover {
+  opacity: 1.0;
+  color: rgb(243, 119, 43);
+}
+
+/* フッター */
+#footer {
+  font-size: 0.875rem;
+  background-color: #ecebeb;
+}
+
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer .item{
+  width: 30%;
+}
+
+#footer .footer-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#footer ul.about-list {
+  margin: 20px 0;
+}
+
+#footer ul.about-list li {
+  margin-bottom: 5px;
+}
+
+#footer ul.about-list .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  color: #333;
+}
+
+#footer ul.about-list .arrow::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+#footer .menu-list {
+  font-size: 0.875rem;
+  margin: 20px 0;
+}
+
+#footer .menu-list li {
+  border-top: solid 1px #777;
+  padding: 15px;
+  text-align: left;
+}
+
+#footer .menu-list li:last-child {
+  border-bottom: solid 1px #777;
+}
+
+#footer .copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 10px 0;
+}
